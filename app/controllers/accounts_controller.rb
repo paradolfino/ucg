@@ -13,7 +13,7 @@ class AccountsController < ApplicationController
         if @account.save
            redirect_to @account 
         else
-            
+            render 'index'
         end
     end
     
