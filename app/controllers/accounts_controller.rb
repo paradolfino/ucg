@@ -1,4 +1,5 @@
 class AccountsController < ApplicationController
+    before_action :set_acc
     def index
         @accounts = Account.all
     end
