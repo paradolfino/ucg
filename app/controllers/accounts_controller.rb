@@ -15,4 +15,10 @@ class AccountsController < ApplicationController
     def update
         
     end
+    
+    private
+    
+        def account_params
+           params.require(:account).permit(:name, :credits) 
+        end
 end
