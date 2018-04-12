@@ -19,7 +19,12 @@ class AccountsController < ApplicationController
     end
     
     def update
-        
+        @account = Account.find(params[:id])
+        if @account.update(account_params)
+            
+        else
+            
+        end
     end
     
     private
