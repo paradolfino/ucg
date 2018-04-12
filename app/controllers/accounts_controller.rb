@@ -23,7 +23,7 @@ class AccountsController < ApplicationController
         if @account.update(account_params)
             redirect_to @account
         else
-            
+            render 'show'
         end
     end
     
