@@ -21,7 +21,7 @@ class AccountsController < ApplicationController
     def update
         @account = Account.find(params[:id])
         if @account.update(account_params)
-            
+            redirect_to @account
         else
             
         end
