@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'accounts#index'
   get 'accounts/:id' => 'accounts#show', as: 'account'
   put 'accounts/:id' => 'accounts#update'
+  patch 'accounts/:id' => 'accounts#update'
 end
