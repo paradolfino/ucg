@@ -2,6 +2,7 @@ class AccountsController < ApplicationController
     
     def index
         @accounts = Account.all
+        @account = Account.new
     end
     
     def show
