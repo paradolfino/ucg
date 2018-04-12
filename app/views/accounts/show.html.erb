@@ -1,2 +1,5 @@
 Name: <%= @account.name %>
 Credits: <%= @account.credits %>
+<%= form_for :account do |f| %>
+    <%= f.submit %>
+<% end %>
