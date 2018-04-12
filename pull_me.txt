@@ -1,1 +1,5 @@
 
+[project setup, model, controller, routes]
+### 12/04/2018[21:56 - 22:22]:
+* gen model and controller, setup views
+
