@@ -9,7 +9,7 @@ class AccountsController < ApplicationController
     end
     
     def create
-        
+        @account = Account.new(account_params)
     end
     
     def update
